@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Railway style header banner */
+h2 {
+  font-weight: 700;
+  color: #ffffff;
+  background: #1e3a8a; /* Deep Navy Blue */
+  width: 100%;
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 25px 0;
+  font-size: 2.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #ea580c; /* Orange accent line */
+}
+
+h3 {
+  color: #1e3a8a;
+  font-size: 1.6rem;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 650px;
+  border-bottom: 3px solid #ea580c;
+  padding-bottom: 8px;
+}
+
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #1e3a8a;
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Making inputs fit side-by-side like a real travel form */
+form input {
+  width: calc(50% - 10px);
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 1rem;
+  color: #1e293b;
+  transition: all 0.2s ease;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Full width for specific inputs if needed, but here all are 50% except button */
+form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+button {
+  background: #ea580c; /* Bright Railway Orange */
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 6px rgba(234, 88, 12, 0.2);
+}
+
+button:hover {
+  background: #c2410c;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#bookings {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.booking {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #ea580c; /* Orange ticket stub look */
+  transition: transform 0.2s ease;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adding a watermark train icon look using CSS */
+.booking::after {
+  content: "🚂";
+  position: absolute;
+  right: -10px;
+  bottom: -15px;
+  font-size: 5rem;
+  opacity: 0.05;
+}
+
+.booking:hover {
+  transform: translateX(5px);
+  border-left-color: #1e3a8a;
+}
+
+.booking b {
+  color: #1e3a8a;
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #cbd5e1;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,6 @@
+- [x] Fix frontend script tag to load index.js
+- [x] Fix frontend index.js: correct form/input element IDs, typos (from->form, BookingFrom->booking system), and ensure fetch POST/GET works
+- [x] Fix backend routes: require correct Booking model path/case
+- [x] Fix backend errorHandler middleware syntax
+- [ ] Run backend (npm run dev) and verify API /api/bookings works with MongoDB (ensure .env MONGO_URI is set)
+- [ ] Open frontend/index.html and verify booking submit + bookings list rendering
